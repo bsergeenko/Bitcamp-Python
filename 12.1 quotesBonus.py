@@ -5,7 +5,7 @@ quotes = ["Some people are worth melting for.",
           "Hakuna Matata, it means \"no worries for the rest of your days.\"",
           "Never grow up." ]
 
-match cartoon:
+match cartoon :
     case "Frozen":
         print(quotes[0])
     case "Coco":
