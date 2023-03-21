@@ -6,7 +6,7 @@ figlet = Figlet()
 fonts = figlet.getFonts()
 
 if len(sys.argv) == 1:
-    figlet = Figlet(font = random.choice(Figlet().getFonts()))
+    figlet.setFont(font = random.choice(fonts))
 elif sys.argv[1] == "-f" or sys.argv[1] == "--font":
     my_font = sys.argv[2]
     if my_font in fonts:
