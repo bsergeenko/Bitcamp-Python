@@ -17,5 +17,3 @@ try:
     
 except requests.RequestException:
     pass
-
-    
