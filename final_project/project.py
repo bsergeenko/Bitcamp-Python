@@ -30,11 +30,18 @@ def main():
             board[r][col] = player
 
             if check_win(board, player):
-                print(f"    congratulations !! 🎉 Player {player} won!!  🥇 \n")
+                print_board(board)
+                print(f"\n   congratulations !! 🎉 Player {player} won!!  🥇 \n")
+                if game_again():
+                    main()
                 break
+                
 
             if check_tie(board):
+                print_board(board)
                 print(" Match Draw! 🔥")
+                if game_again():
+                    main()
                 break
             else:
                 # swapping the player 
@@ -118,6 +125,10 @@ def check_tie(board):
         if "-" in row:
             return False
     return True
+
+def game_again():
+    ask = input("Do you want to play again? Press 'y' for Yes or any other key to quit: ")
+    return ask.lower() == 'y'
 
 
 
