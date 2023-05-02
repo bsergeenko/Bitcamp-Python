@@ -1,6 +1,7 @@
 # Tic-Tac-Toe Game
 
-## Video Demo: https://www.youtu.be/watch?v=Ulmx2jQEr-k
+### Video Demo: 
+https://youtu.be/Ulmx2jQEr-k
 
 ### Description: 
 This is a simple Tic Tac Toe game built in python.
@@ -16,8 +17,8 @@ There will be two players in a game. "X" and "O" represent players. There will b
 - output winner and final view of the board.
 - User input: play again or break
 
-- Inputs: row, column, game again: Yes or No, option to stop game anytime.
+Inputs: row, column, game again: Yes or No, option to stop game anytime.
 
-- Proccesses: start, play
+Proccesses: start, play
 
-- Output: board, player, position of players, win, draw match, question, notification if something goes wrong.
+Output: board, player, position of players, win, draw match, question, notification if something goes wrong.
