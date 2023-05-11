@@ -9,8 +9,10 @@ while True:
 
         if percentage <= 1:
             print("Tank is essentially empty")
-        elif percentage >= 99:
+        elif percentage >= 99 and percentage <= 100:
             print("Tank is essentially full")
+        elif percentage > 100:
+            continue
         else:
             print(f"{percentage}%")
 
