@@ -23,6 +23,7 @@ while True:
             month = int(month)
             if day < 32 and month < 13:
                 print(f"{year}-{month:02}-{day:02}")
+                break
         elif "," in date:
             month, day, year = date.replace(",", "").split(" ")
             day = int(day) 
@@ -30,6 +31,7 @@ while True:
             month = letter_month.index(month) + 1
             if day < 32 and month < 13:
                 print(f"{year}-{month:02}-{day:02}")
+                break
         else:
             continue
     except ValueError:
