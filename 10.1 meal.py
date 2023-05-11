@@ -5,15 +5,14 @@ def main():
     elif time >= 12 and time <= 13:
         print("lunch time")
     elif time >= 18 and time <= 19:
-        print("lunch time")
+        print("dinner time")
     else:
         print("")
 
 def convert(time):
     hour, min = time.split(":")
     hour = float(hour)
-    min = float(min)
-    min = min / 60
+    min = float(min) / 60
     time = hour + min
     return time
 
